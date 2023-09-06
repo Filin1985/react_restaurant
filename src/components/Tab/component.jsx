@@ -1,5 +1,9 @@
 import { Button } from "../Button/component";
 
-export const Tab = ({ title, onTabSelect }) => {
-  return <Button onClick={onTabSelect}>{title}</Button>;
+export const Tab = ({ title, onTabSelect, className }) => {
+  return (
+    <Button className={className} onClick={onTabSelect}>
+      {title}
+    </Button>
+  );
 };

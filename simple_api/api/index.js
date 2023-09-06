@@ -19,7 +19,7 @@ router.get("/restaurant/:restaurantId", (req, res, next) => {
 });
 
 router.get("/dishes", (req, res, next) => {
-  const { restaurantId, productId } = req.query;
+  const { restaurantId, dishId } = req.query;
   let result = products;
 
   if (restaurantId) {
@@ -29,8 +29,8 @@ router.get("/dishes", (req, res, next) => {
     }
   }
 
-  if (!restaurantId && productId) {
-    result = getById(result)(productId);
+  if (!restaurantId && dishId) {
+    result = getById(result)(dishId);
   }
   reply(res, result);
 });

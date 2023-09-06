@@ -1,14 +1,18 @@
+import classNames from "classnames";
 import { UserContainer } from "../User/container";
 
-export const Review = ({ review }) => {
+import styles from "./styles.module.css";
+
+export const Review = ({ review, className }) => {
   if (!review) {
     return null;
   }
 
   return (
-    <div>
-      <span>{review.text}</span>
+    <div className={classNames(className, styles.root)}>
       <UserContainer userId={review.userId} />
+      <div className={styles.rating}>Rating: {review.rating}</div>
+      <span className={styles.text}>{review.text}</span>
     </div>
   );
 };

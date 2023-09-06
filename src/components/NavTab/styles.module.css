@@ -1,0 +1,33 @@
+.root {
+    color: black;
+    text-decoration: none;
+    border: 1px solid #5b5b5b;
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+
+    min-width: 25px;
+    transition: border-color 0.2s background-color 0.2s;
+}
+
+.root:hover {
+    border-color: #ec4d04;
+    background-color: #fff3ee;
+    cursor: pointer;
+}
+
+.root.active {
+    border-color: #ff5100;
+    background-color: #ff783e;
+    cursor: default;
+}
+
+.root:disabled {
+    opacity: 0.5;
+}
+
+.root:disabled:hover {
+    border-color: #5b5b5b;
+    background-color: white;
+    cursor: default;
+}

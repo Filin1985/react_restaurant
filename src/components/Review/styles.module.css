@@ -1,0 +1,14 @@
+.root {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.rating {
+    justify-self:flex-end;
+}
+
+.text {
+    margin-top: 10px;
+    grid-column: 1/3;
+}

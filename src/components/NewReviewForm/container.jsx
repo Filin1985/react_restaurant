@@ -1,5 +1,5 @@
-import { NewReviewForm } from "./component";
 import { useCreateReviewMutation } from "../../store/services/api";
+import { NewReviewForm } from "./component";
 
 export const NewReviewFormContainer = ({ restaurantId }) => {
   const [createReview, { isLoading }] = useCreateReviewMutation();

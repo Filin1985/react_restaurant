@@ -1,7 +1,9 @@
 import { Restaurant } from "./component";
 import { useGetRestaurantsQuery } from "../../store/services/api";
+import { useParams } from "react-router-dom";
 
-export const RestaurantContainer = ({ restaurantId }) => {
+export const RestaurantContainer = () => {
+  const { restaurantId } = useParams();
   const { data: restaurant, isLoading } = useGetRestaurantsQuery(undefined, {
     selectFromResult: (result) => ({
       ...result,

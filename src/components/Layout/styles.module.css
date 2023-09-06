@@ -1,0 +1,28 @@
+.root {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+    z-index: 1;
+}
+
+.footer {
+    height: 32px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    z-index: 1;
+}

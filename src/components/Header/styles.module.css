@@ -1,0 +1,7 @@
+.root {
+    height: 64px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
